@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int x,y;
+    cin >> x >> y;
+    int m[x][y];
+    for(int i=0;i<x;i++){
+        for(int j=0;j<y;j++){
+            cin >> m[i][j];
+        }
+    }
+    int sum1=0,sum2=0;
+    for(int i=0;i<x;i++){
+        for(int j=0;j<y;j++){
+            if(i==j){
+                sum1+=m[i][j];
+            }
+            if((j==y && i==0) || i==j || (j==0 && i==x)){
+            sum2+=m[i][j];
+            }
+        }
+        
+        
+    }
+    cout << sum1 << endl << sum2;
+    return 0;
+}
