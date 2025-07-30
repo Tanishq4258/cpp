@@ -5,5 +5,6 @@ auto add = [](int a, int b){
 };
 int main(){
     int a=5, b=6;
-    cout << add(a,b);
+    int result = add(a,b);
+    cout << result << endl;
 }
