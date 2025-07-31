@@ -19,12 +19,14 @@ int main(){
     sswap(p1, p3);
 
     cout << "After swapping: " << endl;
-    cout << "a = " << a << ", b = " << b << ", c = " << c << endl;
+    cout << "a = " << *p1 << ", b = " << *p2 << ", c = " << *p3 << endl;
 
     int *largest = findlargest(p1, p2, p3);
     cout << "Largest value is: " << *largest << endl;
     *largest = 100;
     cout << "Therefore Modified Value is: " << *largest << endl;
+    cout << "After modification: " << endl;
+    cout << "a = " << *p1 << ", b = " << *p2 << ", c = " << *p3 << endl;
 
     return 0;
 }
