@@ -6,20 +6,14 @@ int calculate(int a, int b) {
 float calculate(float a, float b) {
     return a*b;
 }
-int calculate(int a, int b, int c) {
-    return (float(a) + float(b) + float(c))/3;
+float calculate(int a, int b, int c) {
+    return (a + b + c) / 3.0f;
 }
 int main(){
-    int x,y,z;
-    float p,q;
-    cout << "Enter two integers: ";
-    cin >> x >> y;
+    int x = 5, y = 10, z = 15;
+    float a = 2.5f, b = 3.5f;
     cout << "Sum of integers: " << calculate(x, y) << endl;
-    cout << "Enter two floats: ";
-    cin >> p >> q;
-    cout << "Product of floats: " << calculate(p, q) << endl;
-    cout << "Enter three integers: ";
-    cin >> x >> y >> z;
+    cout << "Product of floats: " << calculate(a, b) << endl;
     cout << "Average of three integers: " << calculate(x, y, z) << endl;
     return 0;
 }
